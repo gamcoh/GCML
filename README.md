@@ -8,9 +8,9 @@
 
 <h4>List of tags and their options:</h4>
 <ul>
-	<li><gc-body [bgcolor]></li>
-	<li><gc-container [bgcolor] [width]></li>
-	<li><gc-table [bgcolor] [width] [height] [align]></li>
-	<li><gc-btn [fontcolor] [bgcolor] [width] [height] [radius] [fontsize]></li>
-	<li><gc-spacer [height] [bgcolor]></li>
+	<li><pre><gc-body [bgcolor]></pre></li>
+	<li><pre><gc-container [bgcolor] [width]></pre></li>
+	<li><pre><gc-table [bgcolor] [width] [height] [align]></pre></li>
+	<li><pre><gc-btn [fontcolor] [bgcolor] [width] [height] [radius] [fontsize]></pre></li>
+	<li><pre><gc-spacer [height] [bgcolor]></pre></li>
 </ul>
