@@ -1,16 +1,14 @@
 
-<h1>GCML</h1>
-<h2>HTML but for emailing newsletters</h2>
+#GCML
+##HTML but for emailing newsletters
 
-<h3>Use example:</h3>
-<pre>python main.py -i index.gcml -c true</pre>
+###Use example:
+	python main.py -i index.gcml -c true
 
-<br/><br/>
+###List of tags and their options:
 
-<h4>List of tags and their options:</h4>
-
-<p><code><gc-body [bgcolor]></code></p>
-<p><code><gc-container [bgcolor] [width]></code></p>
-<p><code><gc-table [bgcolor] [width] [height] [align]></code></p>
-<p><code><gc-btn [fontcolor] [bgcolor] [width] [height] [radius] [fontsize]></code></p>
-<p><code><gc-spacer [height] [bgcolor]></code></p>
+	<gc-body [bgcolor]></code>
+	<gc-container [bgcolor] [width]>
+	<gc-table [bgcolor] [width] [height] [align]>
+	<gc-btn [fontcolor] [bgcolor] [width] [height] [radius] [fontsize]>
+	<gc-spacer [height] [bgcolor]>
