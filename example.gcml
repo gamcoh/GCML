@@ -1,0 +1,15 @@
+<gc-body bgcolor="#FFF">
+	<gc-container width="600">
+		<gc-mirror fontcolor="#010101">
+		<gc-spacer height="30">
+		<tr>
+			<td align="center">
+				<gc-btn width="200" radius="3" height="30" bgcolor="#FF0000" fontcolor="#FFF" size="15" label="ACHETER">
+			</td>
+		</tr>
+		<gc-spacer height="30">
+		<gc-unsub fontcolor="#010101">
+		<gc-spacer height="30">
+		<gc-menu items="promotions,soldes,nouveautés,enfant,homme" fontcolor="#010101" bgcolor="#FFF" size="12">
+	</gc-container>
+</gc-body>
