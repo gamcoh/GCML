@@ -12,59 +12,59 @@ class Gcml:
 		# body
 		'<gc-body>': {
 			'pattern': r'<gc-body[^>]*>',
-			'file': 'gc-body.html',
+			'file': 'lib/gc-body.html',
 			'options': ['bgcolor="[^"]*"']
 		},
 		'</gc-body>': {
 			'pattern': r'</gc-body>',
-			'file': 'gc-body.end.html',
+			'file': 'lib/gc-body.end.html',
 			'options': False
 		},
 
 		# container
 		'<gc-container>': {
 			'pattern': r'<gc-container[^>]*>',
-			'file': 'gc-container.html',
+			'file': 'lib/gc-container.html',
 			'options': ['width="[^"]*"', 'bgcolor="[^"]*"', 'height="[^"]*"', 'align="[^"]*"']
 		},
 		'</gc-container>': {
 			'pattern': r'</gc-container>',
-			'file': 'gc-container.end.html',
+			'file': 'lib/gc-container.end.html',
 			'options': False
 		},
 
 		# btn
 		'<gc-btn>': {
 			'pattern': r'<gc-btn[^>]*>',
-			'file': 'gc-btn.html',
+			'file': 'lib/gc-btn.html',
 			'options': ['fontcolor="[^"]*"', 'bgcolor="[^"]*"', 'width="[^"]*"', 'height="[^"]*"', 'radius="[^"]*"', 'size="[^"]*"', 'label="[^"]*"']
 		},
 
 		# spacer
 		'<gc-spacer>': {
 			'pattern': r'<gc-spacer[^>]*>',
-			'file': 'gc-spacer.html',
+			'file': 'lib/gc-spacer.html',
 			'options': ['height="[^"]*"', 'bgcolor="[^"]*"']
 		},
 
 		# mirror url
 		'<gc-mirror>': {
 			'pattern': r'<gc-mirror[^>]*>',
-			'file': 'gc-mirror.html',
+			'file': 'lib/gc-mirror.html',
 			'options': ['fontcolor="[^"]*"']
 		},
 
 		# unsub url
 		'<gc-unsub>': {
 			'pattern': r'<gc-unsub[^>]*>',
-			'file': 'gc-unsub.html',
+			'file': 'lib/gc-unsub.html',
 			'options': ['fontcolor="[^"]*"']
 		},
 
 		# menu resp
 		'<gc-menu>': {
 			'pattern': r'<gc-menu[^>]*>',
-			'file': 'gc-menu.html',
+			'file': 'lib/gc-menu.html',
 			'options': ['fontcolor="[^"]*"', 'size="[^"]*"', 'bgcolor="[^"]*"', 'items="[^"]*"']
 		}
 	}
