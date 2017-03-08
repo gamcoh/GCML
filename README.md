@@ -18,13 +18,14 @@
 	<gc-mirror [fontcolor]>
 	<gc-unsub [fontcolor]>
 	<gc-menu [items] [fontcolor] [bgcolor] [fontsize]>
+	<gc-ctl-btn [width] [btn-clr] [input-clr] [height] [label]>
 
 ### Contributions
 Author: Gamliel COHEN
 
 if you want to add a new tag, it is very simple.
 You need to edit the main.py file, in the Gcml class,
-there is a dictionnary where are all the tags, their HTML file,
+there is a dictionnary where all the tags, their HTML file,
 and their options are defined. You just have to add a new entry like that:
 
 	'<gc-tag>': {

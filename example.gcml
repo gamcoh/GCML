@@ -11,5 +11,7 @@
 		<gc-unsub fontcolor="#010101">
 		<gc-spacer height="30">
 		<gc-menu items="promotions,soldes,nouveautés,enfant,homme" fontcolor="#010101" bgcolor="#FFF" size="12">
+		<gc-spacer height="30">
+		<gc-ctl-btn width="90%" btn-clr="#cd7466" input-clr="#e5e5e5" height="40" label="J'EN PROFITE">
 	</gc-container>
 </gc-body>

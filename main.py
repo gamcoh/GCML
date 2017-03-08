@@ -66,6 +66,13 @@ class Gcml:
 			'pattern': r'<gc-menu[^>]*>',
 			'file': 'lib/gc-menu.html',
 			'options': ['fontcolor="[^"]*"', 'size="[^"]*"', 'bgcolor="[^"]*"', 'items="[^"]*"']
+		},
+
+		# bouton + input pour ctl responsive
+		'<gc-ctl-btn>': {
+			'pattern': r'<gc-ctl-btn[^>]*>',
+			'file': 'lib/gc-ctl-btn.html',
+			'options': ['width="[^"]*"', 'btn-clr="[^"]*"', 'input-clr="[^"]*"', 'height="[^"]*"', 'label="[^"]*"']
 		}
 	}
 
@@ -213,6 +220,28 @@ class Gcml:
 								else:
 									print 'ERROR: values of menu items not found'
 									exit(3)
+							# if the option is input-clrValue
+							elif opt == '[[input-clr]]' and val != '':
+								inputCtlValue = re.search('input-clr="([^"]*)"', val)
+								# if the color value were found
+								if inputCtlValue:
+									newContentHtml = newContentHtml.replace('[[input-clrValue]]', inputCtlValue.group(1))
+								# color value not found
+								else:
+									print 'ERROR: input-clr option enabled but no value found.'
+									exit(4)
+							# if the option is btn-clrValue
+							elif opt == '[[btn-clr]]' and val != '':
+								btnColor = re.search('btn-clr="([^"]*)"', val)
+								# if the color value were found
+								if btnColor:
+									newContentHtml = newContentHtml.replace('[[btn-clrValue]]', btnColor.group(1))
+								# color value not found
+								else:
+									print 'ERROR: btn-clr option enabled but no value found.'
+									exit(5)
+
+
 
 							print 'tag: ' + match
 							print 'option: ' + opt
