@@ -13,7 +13,7 @@ class Gcml:
 		'<gc-body>': {
 			'pattern': r'<gc-body[^>]*>',
 			'file': 'lib/gc-body.html',
-			'options': ['bgcolor="[^"]*"']
+			'options': ['bgcolor="[^"]*"', 'width="[^"]*"']
 		},
 		'</gc-body>': {
 			'pattern': r'</gc-body>',
@@ -266,12 +266,12 @@ class Gcml:
 	def clean(self):
 		htmlFile = open(self.nameFile + '.html', 'r+').read()
 		data = {
-			'code': htmlFile,
-			'indent': 4,
-			'allow-proprietary-attribs': True
+			'htmlString': htmlFile,
+			'indentation': 'TABS',
+			'forceInNewWindow': 'true'
 		}
-		res = post('https://dirtymarkup.com/api/html', data=data)
-		newHtml = literal_eval(res.text)['clean']
+		res = post('http://www.freeformatter.com/html-formatter.html', data=data)
+		newHtml = literal_eval(res.text)
 
 		print 'DIRTY MARKUP: clean'
 		open(self.nameFile + '.html', 'w').write(newHtml)
