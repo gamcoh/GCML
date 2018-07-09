@@ -1,14 +1,14 @@
 
-#GCML
-##HTML for emailing newsletters
+# GCML
+## HTML for emailing newsletters
 
-###Use example:
+### Use example:
 	python main.py -i index.gcml -c true
 
 * -i --input, the GCML file you want to run
 * -c --clean, if you want to clean up the HTML file after
 
-###List of tags and their options:
+### List of tags and their options:
 
 	<gc-body [bgcolor]></code>
 	<gc-container [bgcolor] [width]>
